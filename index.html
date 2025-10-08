@@ -35,24 +35,54 @@
   <main id="top" class="pt-5">
     <section id="about" class="py-5" aria-labelledby="about-title">
       <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-md-4 text-center">
-            <figure class="m-0">
-              <img src="https://picsum.photos/320" alt="张媛媛头像" class="img-fluid rounded-circle shadow-sm profile-photo" loading="lazy" width="320" height="320" />
-              <figcaption class="visually-hidden">信息管理与信息系统专业学生张媛媛的头像</figcaption>
-            </figure>
-          </div>
-          <div class="col-md-8">
-            <h1 id="about-title" class="fw-bold mb-3">张媛媛 · 信息管理与信息系统</h1>
-            <p class="lead text-secondary">信息工程学院 2027 届本科生，专注信息系统规划与数据治理。</p>
-            <p>热衷于将管理理念与技术实践结合，熟悉 C#、数据库设计与 Web 前端开发，关注教学管理与智慧校园建设场景。</p>
-            <a class="btn btn-primary mt-3" href="#" role="button">下载简历</a>
-            <div class="row row-cols-1 row-cols-sm-2 g-3 mt-4">
-              <div class="col">
-                <div class="info-tile">
-                  <span class="info-label">姓名</span>
-                  <span class="info-value">张媛媛</span>
+        <div class="about-surface p-4 p-lg-5">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-5">
+              <article class="summary-card h-100" aria-labelledby="about-title">
+                <div class="summary-visual" role="presentation">
+                  <img src="https://picsum.photos/seed/intro-cover/720/280" alt="山脉与湖泊的风景图" loading="lazy" width="720" height="280" />
                 </div>
+                <div class="summary-body">
+                  <h1 id="about-title" class="summary-title">个人简介</h1>
+                  <p>湖北中医药大学信息工程学院在读女生，专注于信息系统的规划与实现。</p>
+                  <p>热爱将业务流程与技术结合，熟悉 C#、Web 前端基础开发技能，在项目中注重数据安全与使用体验的平衡。</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-7">
+              <article class="info-card h-100" aria-label="张媛媛的个人信息">
+                <h2 class="info-card-title">个人信息</h2>
+                <ul class="list-unstyled info-list mb-0">
+                  <li class="info-list-item"><span class="info-term">姓名</span><span class="info-desc">张媛媛</span></li>
+                  <li class="info-list-item"><span class="info-term">学号</span><span class="info-desc">2023307012100</span></li>
+                  <li class="info-list-item"><span class="info-term">院系</span><span class="info-desc">信息工程学院</span></li>
+                  <li class="info-list-item"><span class="info-term">专业</span><span class="info-desc">信息管理与信息系统</span></li>
+                  <li class="info-list-item"><span class="info-term">毕业年份</span><span class="info-desc">2027年</span></li>
+                  <li class="info-list-item"><span class="info-term">籍贯</span><span class="info-desc">贵州铜仁</span></li>
+                  <li class="info-list-item"><span class="info-term">星座</span><span class="info-desc">未知</span></li>
+                  <li class="info-list-item"><span class="info-term">邮箱</span><a class="info-link" href="mailto:zhangyy-campus@edu.example.com">zhangyy-campus@edu.example.com</a></li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-body" aria-label="作品轮播">
+      <div class="container">
+        <div id="showcaseCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#showcaseCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="幻灯片 1"></button>
+            <button type="button" data-bs-target="#showcaseCarousel" data-bs-slide-to="1" aria-label="幻灯片 2"></button>
+            <button type="button" data-bs-target="#showcaseCarousel" data-bs-slide-to="2" aria-label="幻灯片 3"></button>
+          </div>
+          <div class="carousel-inner rounded-4 shadow-sm overflow-hidden">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="https://picsum.photos/seed/interface/1200/500" class="d-block w-100" alt="项目界面展示图" loading="lazy" width="1200" height="500" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>响应式企业站</h5>
+                <p>为成长型企业打造的跨平台形象网站。</p>
               </div>
               <div class="col">
                 <div class="info-tile">
