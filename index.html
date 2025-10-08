@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>张康乐 · 个人简介</title>
+  <title>张媛媛 · 个人主页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -13,26 +13,85 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="resume-wrapper">
-    <aside class="profile-card" aria-labelledby="profile-name">
-      <img
-        src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80"
-        alt="张康乐的个人照片"
-        class="avatar"
-        width="200"
-        height="200"
-        loading="lazy"
-      />
-      <h1 id="profile-name">张康乐</h1>
-      <p class="subtitle">2027届毕业生 · 信息工程学院</p>
-      <dl class="profile-data">
-        <div class="data-row">
-          <dt>姓名</dt>
-          <dd>张康乐</dd>
+  <header class="fixed-top standout-header">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Primary navigation">
+      <div class="container">
+        <a class="navbar-brand fw-semibold text-uppercase" href="#top">张媛媛</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="切换导航">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="primaryNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="data-row">
-          <dt>学号</dt>
-          <dd>202330701200</dd>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="pt-5">
+    <section id="about" class="py-5" aria-labelledby="about-title">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-4 text-center">
+            <figure class="m-0">
+              <img src="https://picsum.photos/320" alt="张媛媛头像" class="img-fluid rounded-circle shadow-sm profile-photo" loading="lazy" width="320" height="320" />
+              <figcaption class="visually-hidden">信息管理与信息系统专业学生张媛媛的头像</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-8">
+            <h1 id="about-title" class="fw-bold mb-3">张媛媛 · 信息管理与信息系统</h1>
+            <p class="lead text-secondary">信息工程学院 2027 届本科生，专注信息系统规划与数据治理。</p>
+            <p>热衷于将管理理念与技术实践结合，熟悉 C#、数据库设计与 Web 前端开发，关注教学管理与智慧校园建设场景。</p>
+            <a class="btn btn-primary mt-3" href="#" role="button">下载简历</a>
+            <div class="row row-cols-1 row-cols-sm-2 g-3 mt-4">
+              <div class="col">
+                <div class="info-tile">
+                  <span class="info-label">姓名</span>
+                  <span class="info-value">张媛媛</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="info-tile">
+                  <span class="info-label">学号</span>
+                  <span class="info-value">2023307012100</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="info-tile">
+                  <span class="info-label">院系</span>
+                  <span class="info-value">信息工程学院</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="info-tile">
+                  <span class="info-label">专业</span>
+                  <span class="info-value">信息管理与信息系统</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="info-tile">
+                  <span class="info-label">毕业年份</span>
+                  <span class="info-value">2027年</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="info-tile">
+                  <span class="info-label">籍贯</span>
+                  <span class="info-value">贵州铜仁</span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="info-tile">
+                  <span class="info-label">星座</span>
+                  <span class="info-value">未知</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="data-row">
           <dt>学院</dt>
@@ -58,13 +117,79 @@
             <span class="label">籍贯</span>
             <span class="value">湖南长沙</span>
           </div>
-          <div class="info-item">
-            <span class="label">星座</span>
-            <span class="value">双子座</span>
+          <div class="col-lg-8">
+            <ul class="list-inline skill-list mb-0">
+              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">HTML5</span></li>
+              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">CSS3</span></li>
+              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">JavaScript</span></li>
+              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">Bootstrap</span></li>
+              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">jQuery</span></li>
+            </ul>
           </div>
-          <div class="info-item">
-            <span class="label">求职意向</span>
-            <span class="value">信息系统技术·信息管理岗</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-body" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-4">
+          <h2 id="projects-title" class="fw-semibold mb-3 mb-md-0">项目展示</h2>
+          <p class="text-secondary mb-0">围绕教学管理与校园信息化的实践成果。</p>
+        </div>
+        <div class="row g-4">
+          <article class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="https://picsum.photos/seed/teaching/600/400" class="card-img-top" alt="教学管理系统界面示意" loading="lazy" width="600" height="400" />
+              <div class="card-body">
+                <h3 class="card-title h5">教学管理</h3>
+                <p class="card-text text-secondary">运用 C# 语言编写出了一个教学管理系统，包括学生成绩修改与录入，学生信息管理与修改，学生信息的存储，学生课程录入与修改。</p>
+                <div class="mb-3">
+                  <span class="badge text-bg-light text-uppercase">C#</span>
+                  <span class="badge text-bg-light text-uppercase">WinForms</span>
+                </div>
+                <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="https://picsum.photos/seed/bookshop/600/400" class="card-img-top" alt="二手书网站页面预览" loading="lazy" width="600" height="400" />
+              <div class="card-body">
+                <h3 class="card-title h5">二手书网站</h3>
+                <p class="card-text text-secondary">构建面向校园的二手书交易平台，支持分类检索、价格智能推荐与留言交流，帮助学生高效完成教材流转。</p>
+                <div class="mb-3">
+                  <span class="badge text-bg-light text-uppercase">Laravel</span>
+                  <span class="badge text-bg-light text-uppercase">MySQL</span>
+                </div>
+                <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="https://picsum.photos/seed/hospital/600/400" class="card-img-top" alt="医院库存管理系统界面示意" loading="lazy" width="600" height="400" />
+              <div class="card-body">
+                <h3 class="card-title h5">医院库存管理</h3>
+                <p class="card-text text-secondary">以湖北中医药大学附属医院的库存管理为模型，编写了库存管理后台，支持药品入库出库、库存预警与科室领用流程跟踪。</p>
+                <div class="mb-3">
+                  <span class="badge text-bg-light text-uppercase">.NET</span>
+                  <span class="badge text-bg-light text-uppercase">SQL Server</span>
+                </div>
+                <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <h2 id="contact-title" class="fw-semibold">保持联系</h2>
+            <p class="text-secondary">欢迎交流信息管理、校园系统建设或高校数字化转型相关合作，共同探索更多可能性。</p>
+            <div class="alert alert-success d-none" role="status" id="formAlert">消息已收到，将尽快回复！</div>
           </div>
           <div class="info-item">
             <span class="label">邮箱</span>
@@ -73,7 +198,18 @@
             </span>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 bg-dark text-white" aria-label="页脚">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <p class="mb-0">© <span id="currentYear"></span> 张媛媛. All rights reserved.</p>
+      <div class="d-flex align-items-center gap-3">
+        <a class="text-white" href="#" aria-label="GitHub" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+        <a class="text-white" href="#" aria-label="LinkedIn" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+        <a class="text-white" href="#top" aria-label="返回顶部" id="backToTop"><i class="bi bi-arrow-up-circle"></i></a>
+      </div>
     </div>
   </div>
 </body>
