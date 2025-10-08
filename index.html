@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>李雷 · 前端工程师</title>
+  <title>张媛媛 · 湖北中医药大学学生</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
@@ -12,19 +12,19 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="fixed-top shadow-sm bg-body-tertiary bg-opacity-75 backdrop-blur">
-    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
+  <header class="fixed-top shadow-sm nav-glass backdrop-blur">
+    <nav class="navbar navbar-expand-lg" aria-label="Primary navigation">
       <div class="container">
-        <a class="navbar-brand fw-semibold" href="#top">Li Lei</a>
+        <a class="navbar-brand fw-bold text-uppercase tracking-wide" href="#top">张媛媛</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="切换导航">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="primaryNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase fw-semibold">
+            <li class="nav-item"><a class="nav-link" href="#about">简介</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">技能</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">项目</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">联系</a></li>
           </ul>
         </div>
       </div>
@@ -34,18 +34,63 @@
   <main id="top" class="pt-5">
     <section id="about" class="py-5" aria-labelledby="about-title">
       <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-md-4 text-center">
-            <figure class="m-0">
-              <img src="https://picsum.photos/320" alt="李雷头像" class="img-fluid rounded-circle shadow-sm profile-photo" loading="lazy" width="320" height="320" />
-              <figcaption class="visually-hidden">前端工程师李雷的头像</figcaption>
-            </figure>
+        <div class="row align-items-start g-4">
+          <div class="col-md-4">
+            <aside class="profile-card h-100">
+              <div class="profile-card__media">
+                <img src="https://picsum.photos/seed/portrait/360/360" alt="张媛媛头像" class="img-fluid profile-photo" loading="lazy" width="360" height="360" />
+              </div>
+              <div class="profile-card__body">
+                <h2 class="profile-card__name">张媛媛</h2>
+                <p class="profile-card__subtitle">湖北中医药大学 · 信息工程学院</p>
+                <dl class="profile-card__list">
+                  <div class="profile-card__item">
+                    <dt>学号</dt>
+                    <dd>2023307012100</dd>
+                  </div>
+                  <div class="profile-card__item">
+                    <dt>专业</dt>
+                    <dd>信息管理与信息系统</dd>
+                  </div>
+                  <div class="profile-card__item">
+                    <dt>年级</dt>
+                    <dd>2023级 · 2027届毕业生</dd>
+                  </div>
+                  <div class="profile-card__item">
+                    <dt>籍贯</dt>
+                    <dd>湖北 · 武汉</dd>
+                  </div>
+                  <div class="profile-card__item">
+                    <dt>星座</dt>
+                    <dd>天秤座</dd>
+                  </div>
+                </dl>
+              </div>
+            </aside>
           </div>
           <div class="col-md-8">
-            <h1 id="about-title" class="fw-bold mb-3">李雷 · 前端工程师</h1>
-            <p class="lead text-secondary">热爱简洁代码与优雅体验的全栈倾向前端开发者。</p>
-            <p>专注于构建性能优、可维护的 Web 应用，擅长将设计转化为灵活的交互界面，并持续关注可访问性与工程效率。</p>
-            <a class="btn btn-primary mt-3" href="#" role="button">下载简历</a>
+            <h1 id="about-title" class="fw-bold mb-4">张媛媛 · 湖北中医药大学学生</h1>
+            <div class="intro-panel">
+              <h2 class="intro-heading">个人简介</h2>
+              <p class="lead text-secondary mb-3">湖北中医药大学信息工程学院的在校学生，专注于信息系统的规划与实现。</p>
+              <p class="mb-0">擅长将业务流程与信息化系统结合，熟悉C#、Web前端及数据库基础，正在积极探索教育、医疗和校园生活数字化的更多可能性。</p>
+            </div>
+            <div class="info-panel">
+              <h3 class="info-heading">个人信息</h3>
+              <div class="mb-3 d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill text-bg-light">2023307012100</span>
+                <span class="badge rounded-pill text-bg-light">信息工程学院</span>
+                <span class="badge rounded-pill text-bg-light">信息管理与信息系统</span>
+                <span class="badge rounded-pill text-bg-light">2027届毕业生</span>
+              </div>
+              <ul class="info-list list-unstyled mb-3">
+                <li><span>目前身份：</span>信息管理与信息系统专业本科生</li>
+                <li><span>主修方向：</span>教学管理与智慧校园信息化</li>
+                <li><span>技术兴趣：</span>C#、前端开发、数据可视化</li>
+                <li><span>座右铭：</span>以数据驱动决策，让管理更高效</li>
+              </ul>
+              <p class="mb-0">邮箱：zhangyy-campus@edu.example.com</p>
+            </div>
           </div>
         </div>
       </div>
@@ -106,9 +151,6 @@
               <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">JavaScript</span></li>
               <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">Bootstrap</span></li>
               <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">jQuery</span></li>
-              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">Git</span></li>
-              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">REST API</span></li>
-              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">Accessibility</span></li>
             </ul>
           </div>
         </div>
@@ -118,49 +160,52 @@
     <section id="projects" class="py-5 bg-body" aria-labelledby="projects-title">
       <div class="container">
         <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-4">
-          <h2 id="projects-title" class="fw-semibold mb-3 mb-md-0">精选项目</h2>
-          <p class="text-secondary mb-0">聚焦真实业务场景的端到端解决方案。</p>
+          <h2 id="projects-title" class="fw-semibold mb-3 mb-md-0">项目展示</h2>
+          <p class="text-secondary mb-0">聚焦教育、校园生活与医疗的信息化实践。</p>
         </div>
         <div class="row g-4">
           <article class="col-md-4">
             <div class="card project-card h-100">
-              <img src="https://picsum.photos/seed/project1/600/400" class="card-img-top" alt="智慧校园平台" loading="lazy" width="600" height="400" />
+              <img src="https://picsum.photos/seed/teaching/600/400" class="card-img-top" alt="教学管理系统界面预览" loading="lazy" width="600" height="400" />
               <div class="card-body">
-                <h3 class="card-title h5">智慧校园平台</h3>
-                <p class="card-text text-secondary">面向高校的教务与活动统一门户，支持多端访问与离线缓存。</p>
+                <h3 class="card-title h5">教学管理系统</h3>
+                <p class="card-text text-secondary">运用C#语言构建，覆盖学生成绩录入修改、信息维护、课程安排等核心环节，帮助辅导员高效完成教学业务。</p>
                 <div class="mb-3">
-                  <span class="badge text-bg-light text-uppercase">React</span>
-                  <span class="badge text-bg-light text-uppercase">PWA</span>
+                  <span class="badge text-bg-light text-uppercase">C#</span>
+                  <span class="badge text-bg-light text-uppercase">WinForms</span>
+                  <span class="badge text-bg-light text-uppercase">SQL Server</span>
                 </div>
-                <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看</a>
+                <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看详情</a>
               </div>
             </div>
           </article>
           <article class="col-md-4">
             <div class="card project-card h-100">
-              <img src="https://picsum.photos/seed/project2/600/400" class="card-img-top" alt="金融数据分析平台" loading="lazy" width="600" height="400" />
+              <img src="https://picsum.photos/seed/books/600/400" class="card-img-top" alt="二手书交易网站页面" loading="lazy" width="600" height="400" />
               <div class="card-body">
-                <h3 class="card-title h5">金融分析仪表盘</h3>
-                <p class="card-text text-secondary">实时展示风控指标，集成权限管理与动态报表导出。</p>
+                <h3 class="card-title h5">校园二手书网站</h3>
+                <p class="card-text text-secondary">结合前后端分离架构，实现图书发布、留言议价与信誉评价，为同学们搭建安全可靠的图书流转平台。</p>
                 <div class="mb-3">
                   <span class="badge text-bg-light text-uppercase">Vue</span>
-                  <span class="badge text-bg-light text-uppercase">ECharts</span>
+                  <span class="badge text-bg-light text-uppercase">Node.js</span>
+                  <span class="badge text-bg-light text-uppercase">MongoDB</span>
                 </div>
-                <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看</a>
+                <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看详情</a>
               </div>
             </div>
           </article>
           <article class="col-md-4">
             <div class="card project-card h-100">
-              <img src="https://picsum.photos/seed/project3/600/400" class="card-img-top" alt="跨境电商平台" loading="lazy" width="600" height="400" />
+              <img src="https://picsum.photos/seed/hospital/600/400" class="card-img-top" alt="医院库存管理系统界面" loading="lazy" width="600" height="400" />
               <div class="card-body">
-                <h3 class="card-title h5">跨境电商平台</h3>
-                <p class="card-text text-secondary">集成多语言与多币种的购物体验，优化 SEO 与加载速度。</p>
+                <h3 class="card-title h5">医院库存管理平台</h3>
+                <p class="card-text text-secondary">以湖北中医药大学附属医院为模型，搭建药品与耗材库存监控、效期预警、采购审批流的综合管理平台。</p>
                 <div class="mb-3">
-                  <span class="badge text-bg-light text-uppercase">Next.js</span>
-                  <span class="badge text-bg-light text-uppercase">i18n</span>
+                  <span class="badge text-bg-light text-uppercase">Spring Boot</span>
+                  <span class="badge text-bg-light text-uppercase">MySQL</span>
+                  <span class="badge text-bg-light text-uppercase">ECharts</span>
                 </div>
-                <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看</a>
+                <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看详情</a>
               </div>
             </div>
           </article>
@@ -173,7 +218,7 @@
         <div class="row g-4">
           <div class="col-lg-5">
             <h2 id="contact-title" class="fw-semibold">保持联系</h2>
-            <p class="text-secondary">欢迎交流前端工程、团队协作或开源项目。期待与优秀团队共同创造价值。</p>
+            <p class="text-secondary">欢迎就信息系统建设、实习机会或校园合作进行交流，我会在收到信息后第一时间回复。</p>
             <div class="alert alert-success d-none" role="status" id="formAlert">消息已收到，将尽快回复！</div>
           </div>
           <div class="col-lg-7">
@@ -208,7 +253,7 @@
 
   <footer class="py-4 bg-dark text-white" aria-label="页脚">
     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-      <p class="mb-0">© <span id="currentYear"></span> Li Lei. All rights reserved.</p>
+      <p class="mb-0">© <span id="currentYear"></span> Zhang Yuanyuan. 保留所有权利。</p>
       <div class="d-flex align-items-center gap-3">
         <a class="text-white" href="#" aria-label="GitHub" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
         <a class="text-white" href="#" aria-label="LinkedIn" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
