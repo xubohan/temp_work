@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>李雷 · 前端工程师</title>
+  <title>张媛媛 · 个人主页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
@@ -12,16 +12,18 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="fixed-top shadow-sm bg-body-tertiary bg-opacity-75 backdrop-blur">
-    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
+  <header class="fixed-top standout-header">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Primary navigation">
       <div class="container">
-        <a class="navbar-brand fw-semibold" href="#top">Li Lei</a>
+        <a class="navbar-brand fw-semibold text-uppercase" href="#top">张媛媛</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="切换导航">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="primaryNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#about" aria-current="page">About</a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -32,20 +34,43 @@
   </header>
 
   <main id="top" class="pt-5">
-    <section id="about" class="py-5" aria-labelledby="about-title">
+    <section id="about" class="section pb-5 pt-6" aria-labelledby="about-title">
       <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-md-4 text-center">
-            <figure class="m-0">
-              <img src="https://picsum.photos/320" alt="李雷头像" class="img-fluid rounded-circle shadow-sm profile-photo" loading="lazy" width="320" height="320" />
-              <figcaption class="visually-hidden">前端工程师李雷的头像</figcaption>
-            </figure>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <article class="profile-card h-100" aria-labelledby="about-title">
+              <div class="profile-header">
+                <div class="profile-avatar" role="presentation">
+                  <img src="https://picsum.photos/seed/zhangyuanyuan/480/480" alt="张媛媛的形象照片" loading="lazy" width="240" height="240" />
+                </div>
+                <div class="profile-meta">
+                  <h1 id="about-title" class="profile-name">张媛媛</h1>
+                  <p class="profile-major">信息管理与信息系统 · 2027年毕业</p>
+                  <p class="profile-origin">信息工程学院 · 籍贯贵州铜仁 · 星座未知</p>
+                </div>
+              </div>
+              <p class="profile-intro">信息工程学院 2027 届本科生，专注信息系统规划与数据治理，关注教学管理与智慧校园建设场景。</p>
+              <p class="profile-intro">熟悉 C#、数据库设计与 Web 前端开发，注重以清晰的业务流程支撑稳定的系统体验。</p>
+            </article>
           </div>
-          <div class="col-md-8">
-            <h1 id="about-title" class="fw-bold mb-3">李雷 · 前端工程师</h1>
-            <p class="lead text-secondary">热爱简洁代码与优雅体验的全栈倾向前端开发者。</p>
-            <p>专注于构建性能优、可维护的 Web 应用，擅长将设计转化为灵活的交互界面，并持续关注可访问性与工程效率。</p>
-            <a class="btn btn-primary mt-3" href="#" role="button">下载简历</a>
+          <div class="col-lg-7">
+            <article class="info-card h-100" aria-label="张媛媛的个人信息">
+              <h2 class="section-title">个人信息</h2>
+              <ul class="list-unstyled info-list mb-4">
+                <li class="info-list-item"><span class="info-term">姓名</span><span class="info-desc">张媛媛</span></li>
+                <li class="info-list-item"><span class="info-term">学号</span><span class="info-desc">2023307012100</span></li>
+                <li class="info-list-item"><span class="info-term">院系</span><span class="info-desc">信息工程学院</span></li>
+                <li class="info-list-item"><span class="info-term">专业</span><span class="info-desc">信息管理与信息系统</span></li>
+                <li class="info-list-item"><span class="info-term">毕业年份</span><span class="info-desc">2027年</span></li>
+                <li class="info-list-item"><span class="info-term">籍贯</span><span class="info-desc">贵州铜仁</span></li>
+                <li class="info-list-item"><span class="info-term">星座</span><span class="info-desc">未知</span></li>
+                <li class="info-list-item"><span class="info-term">邮箱</span><a class="info-link" href="mailto:12341234@qq.com">12341234@qq.com</a></li>
+              </ul>
+              <div class="info-highlight">
+                <h3 class="info-highlight-title">项目方向</h3>
+                <p class="info-highlight-text">教学管理 · 二手书网站 · 医院库存管理</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -106,9 +131,6 @@
               <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">JavaScript</span></li>
               <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">Bootstrap</span></li>
               <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">jQuery</span></li>
-              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">Git</span></li>
-              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">REST API</span></li>
-              <li class="list-inline-item"><span class="badge rounded-pill text-bg-primary">Accessibility</span></li>
             </ul>
           </div>
         </div>
@@ -118,19 +140,19 @@
     <section id="projects" class="py-5 bg-body" aria-labelledby="projects-title">
       <div class="container">
         <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-4">
-          <h2 id="projects-title" class="fw-semibold mb-3 mb-md-0">精选项目</h2>
-          <p class="text-secondary mb-0">聚焦真实业务场景的端到端解决方案。</p>
+          <h2 id="projects-title" class="fw-semibold mb-3 mb-md-0">项目展示</h2>
+          <p class="text-secondary mb-0">围绕教学管理与校园信息化的实践成果。</p>
         </div>
         <div class="row g-4">
           <article class="col-md-4">
             <div class="card project-card h-100">
-              <img src="https://picsum.photos/seed/project1/600/400" class="card-img-top" alt="智慧校园平台" loading="lazy" width="600" height="400" />
+              <img src="https://picsum.photos/seed/teaching/600/400" class="card-img-top" alt="教学管理系统界面示意" loading="lazy" width="600" height="400" />
               <div class="card-body">
-                <h3 class="card-title h5">智慧校园平台</h3>
-                <p class="card-text text-secondary">面向高校的教务与活动统一门户，支持多端访问与离线缓存。</p>
+                <h3 class="card-title h5">教学管理</h3>
+                <p class="card-text text-secondary">运用 C# 语言编写出了一个教学管理系统，包括学生成绩修改与录入，学生信息管理与修改，学生信息的存储，学生课程录入与修改。</p>
                 <div class="mb-3">
-                  <span class="badge text-bg-light text-uppercase">React</span>
-                  <span class="badge text-bg-light text-uppercase">PWA</span>
+                  <span class="badge text-bg-light text-uppercase">C#</span>
+                  <span class="badge text-bg-light text-uppercase">WinForms</span>
                 </div>
                 <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看</a>
               </div>
@@ -138,13 +160,13 @@
           </article>
           <article class="col-md-4">
             <div class="card project-card h-100">
-              <img src="https://picsum.photos/seed/project2/600/400" class="card-img-top" alt="金融数据分析平台" loading="lazy" width="600" height="400" />
+              <img src="https://picsum.photos/seed/bookshop/600/400" class="card-img-top" alt="二手书网站页面预览" loading="lazy" width="600" height="400" />
               <div class="card-body">
-                <h3 class="card-title h5">金融分析仪表盘</h3>
-                <p class="card-text text-secondary">实时展示风控指标，集成权限管理与动态报表导出。</p>
+                <h3 class="card-title h5">二手书网站</h3>
+                <p class="card-text text-secondary">构建面向校园的二手书交易平台，支持分类检索、价格智能推荐与留言交流，帮助学生高效完成教材流转。</p>
                 <div class="mb-3">
-                  <span class="badge text-bg-light text-uppercase">Vue</span>
-                  <span class="badge text-bg-light text-uppercase">ECharts</span>
+                  <span class="badge text-bg-light text-uppercase">Laravel</span>
+                  <span class="badge text-bg-light text-uppercase">MySQL</span>
                 </div>
                 <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看</a>
               </div>
@@ -152,13 +174,13 @@
           </article>
           <article class="col-md-4">
             <div class="card project-card h-100">
-              <img src="https://picsum.photos/seed/project3/600/400" class="card-img-top" alt="跨境电商平台" loading="lazy" width="600" height="400" />
+              <img src="https://picsum.photos/seed/hospital/600/400" class="card-img-top" alt="医院库存管理系统界面示意" loading="lazy" width="600" height="400" />
               <div class="card-body">
-                <h3 class="card-title h5">跨境电商平台</h3>
-                <p class="card-text text-secondary">集成多语言与多币种的购物体验，优化 SEO 与加载速度。</p>
+                <h3 class="card-title h5">医院库存管理</h3>
+                <p class="card-text text-secondary">以湖北中医药大学附属医院的库存管理为模型，编写了库存管理后台，支持药品入库出库、库存预警与科室领用流程跟踪。</p>
                 <div class="mb-3">
-                  <span class="badge text-bg-light text-uppercase">Next.js</span>
-                  <span class="badge text-bg-light text-uppercase">i18n</span>
+                  <span class="badge text-bg-light text-uppercase">.NET</span>
+                  <span class="badge text-bg-light text-uppercase">SQL Server</span>
                 </div>
                 <a class="btn btn-outline-primary btn-sm" href="#" role="button">查看</a>
               </div>
@@ -173,7 +195,7 @@
         <div class="row g-4">
           <div class="col-lg-5">
             <h2 id="contact-title" class="fw-semibold">保持联系</h2>
-            <p class="text-secondary">欢迎交流前端工程、团队协作或开源项目。期待与优秀团队共同创造价值。</p>
+            <p class="text-secondary">欢迎交流信息管理、校园系统建设或高校数字化转型相关合作，共同探索更多可能性。</p>
             <div class="alert alert-success d-none" role="status" id="formAlert">消息已收到，将尽快回复！</div>
           </div>
           <div class="col-lg-7">
@@ -208,7 +230,7 @@
 
   <footer class="py-4 bg-dark text-white" aria-label="页脚">
     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-      <p class="mb-0">© <span id="currentYear"></span> Li Lei. All rights reserved.</p>
+      <p class="mb-0">© <span id="currentYear"></span> 张媛媛. All rights reserved.</p>
       <div class="d-flex align-items-center gap-3">
         <a class="text-white" href="#" aria-label="GitHub" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
         <a class="text-white" href="#" aria-label="LinkedIn" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
